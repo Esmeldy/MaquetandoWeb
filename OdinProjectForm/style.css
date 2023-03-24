@@ -4,8 +4,9 @@
     --height100: 100vh; 
     --per100: 100%;
     --rem1Vw3: calc(1rem + 3vw);
-    --rightSColor: #F9FAFB;
     --rem1Vw1: calc(0.5rem + 1vw);
+    --rem0Vw0: calc(0.5rem + 0.5vw);
+    --rightSColor: #F9FAFB;
     --ColorFocus: #708FE3;
     --button: #596D48;
 }
@@ -86,10 +87,10 @@ body {
 /* Right Side */
 
 .right__side {
-    width: auto;
+    width: calc(50rem + 25vw);
 }
 .right__side__container {
-    width: auto;
+    width: 100%;
 }
 
 .right__side__head {
@@ -113,6 +114,7 @@ body {
 .right__side__mid {
     background-color: #FFFFFF;
     padding: 1em 2em;
+    
 }
 .mid__item__h3 {
     font-size: var(--rem1Vw1);
@@ -125,17 +127,24 @@ body {
 
 .form_container {
     text-transform: uppercase;
-    display: flex;
-    justify-content: flex-start;
-    gap: 6em;
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* gap: 6em; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+    /* gap: 3rem; */
+    font-size: var(--rem0Vw0);
     font-weight: 700;
     margin: 1vw auto;
+    margin-right: -6vw;
+
 }
+
 .form__div__input {
-    width: calc(10rem + 10vw);
+    width: calc(7rem + 7vw);
     height: 2em;
     padding: 0.5em 1em;
-    font-size: 1.2rem;
+    font-size: var(--rem0Vw0);
     outline: 1px solid #e6e6e6;
     background-color: #FFFFFF;
     border-radius: 5px;
@@ -164,7 +173,7 @@ body {
     color: white;
     border-radius: 5px;
     font-weight: 600;
-    
+    font-size: var(--rem0Vw0);
 
     -webkit-box-shadow: 1px 4px 13px 0px rgba(0,0,0,0.4);
     -moz-box-shadow: 1px 4px 13px 0px rgba(0,0,0,0.4);
