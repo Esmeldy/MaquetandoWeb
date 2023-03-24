@@ -86,10 +86,10 @@ body {
 /* Right Side */
 
 .right__side {
-    width: 100%;
+    width: auto;
 }
 .right__side__container {
-    width: 100%;
+    width: auto;
 }
 
 .right__side__head {
